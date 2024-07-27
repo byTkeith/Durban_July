@@ -31,10 +31,12 @@ namespace AnotherOne1
         }
         public string HorseDetails()
         {
-            string edit="===========================================\n         Roaster for next race\n=============================================\n";
-           
+            string edit1="=============================================\n";
+
+            string edit2 = $"        {"",-50}    ";
+            string edit3="Roaster for next race\n=============================================\n";
             string formattedNumber=AverageTime().ToString("F2");
-            return edit+$"Name:{Name}\tAge:{Age}\tHeight:{Height} \thands \tAverage run:{formattedNumber} \tseconds";
+            return edit1+edit2+edit3+$"Name:{Name}  Age: {Age}      Height: {Height} hands   Average run: {formattedNumber} seconds";
         }
     }
 }
