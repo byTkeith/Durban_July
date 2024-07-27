@@ -11,7 +11,7 @@ namespace AnotherOne1
     {
         private List<Horse> horses;
 
-        private July()// default constructor
+        public July()// default constructor
         {
             horses = new List<Horse>();
         }
@@ -23,7 +23,7 @@ namespace AnotherOne1
 
         public void DisplayRoster(TextBox textBox)
         {
-            textBox.clear();
+            textBox.Clear();
             foreach (Horse horse in horses)
             {
                 textBox.AppendText(horse.HorseDetails() + Environment.NewLine);

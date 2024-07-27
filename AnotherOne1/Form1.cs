@@ -2,9 +2,10 @@ namespace AnotherOne1
 {
     public partial class Form1 : Form
     {
+        private July july;
         public Form1()
         {
-            //july = new July();
+            july = new July();
             InitializeComponent();
         }
 
@@ -33,14 +34,5 @@ namespace AnotherOne1
         }
     }
 
-    public static class Program
-    {
-        [STAThread]
-        public static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.Run(new MainForm());
-        }
-
-    }
+    
 }
