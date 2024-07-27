@@ -3,6 +3,7 @@ namespace AnotherOne1
     public partial class Form1 : Form
     {
         private July july;
+        //private TextBox txtOutput;
         public Form1()
         {
             july = new July();
@@ -23,8 +24,13 @@ namespace AnotherOne1
 
             Horse horse = new Horse(name, age, height, times);
             july.AddHorse(horse);
-            //DisplayRoster();
+            DisplayRoster();
 
+        }
+
+        private void DisplayRoster()
+        {
+            july.DisplayRoster(txtRoaster);
         }
 
         private void BtnPredict_Click(object sender, EventArgs e)
