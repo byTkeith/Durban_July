@@ -31,8 +31,10 @@ namespace AnotherOne1
         }
         public string HorseDetails()
         {
-            string formattedNumber=string.Format("{0:G3}",AverageTime());
-            return $"Name:{Name}\tAge:{Age}\tHeight:{Height} \thands \tAverage run:{formattedNumber} \tseconds";
+            string edit="===========================================\n         Roaster for next race\n=============================================\n";
+           
+            string formattedNumber=AverageTime().ToString("F2");
+            return edit+$"Name:{Name}\tAge:{Age}\tHeight:{Height} \thands \tAverage run:{formattedNumber} \tseconds";
         }
     }
 }
