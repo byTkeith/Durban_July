@@ -25,5 +25,22 @@ namespace AnotherOne1
             //DisplayRoster();
 
         }
+
+        private void BtnPredict_Click(object sender, EventArgs e)
+        {
+            Horse favourite = july.Favourite();
+            MessageBox.Show($"Favourite Horse: {favourite.Name} with average time {favourite.AverageTime()}");
+        }
+    }
+
+    public static class Program
+    {
+        [STAThread]
+        public static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.Run(new MainForm());
+        }
+
     }
 }
