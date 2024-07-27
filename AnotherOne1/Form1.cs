@@ -34,17 +34,12 @@ namespace AnotherOne1
            
         }
 
-        private void BtnPredict_Click(object sender, EventArgs e)
+
+        private void btnPredictWinner_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Favourite");
             Horse favourite = july.Favourite();
             System.Windows.Forms.MessageBox.Show($"The next winner will probably be:\nName: {favourite.Name}   Age: {favourite.Age} years  Height: {favourite.Height}\naverage run: {favourite.AverageTime()} seconds");
-        }
-
-        private void btnPredictWinner_Click(object sender, EventArgs e)
-        {
-            Horse favourite = july.Favourite();
-            System.Windows.Forms.MessageBox.Show($"Favourite Horse: {favourite.Name} with average time {favourite.AverageTime()}");
 
         }
     }
