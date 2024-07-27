@@ -9,7 +9,7 @@ namespace AnotherOne1
             InitializeComponent();
         }
 
-       
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -30,9 +30,16 @@ namespace AnotherOne1
         private void BtnPredict_Click(object sender, EventArgs e)
         {
             Horse favourite = july.Favourite();
-            MessageBox.Show($"Favourite Horse: {favourite.Name} with average time {favourite.AverageTime()}");
+            System.Windows.Forms.MessageBox.Show($"Favourite Horse: {favourite.Name} with average time {favourite.AverageTime()}");
+        }
+
+        private void btnPredictWinner_Click(object sender, EventArgs e)
+        {
+            Horse favourite = july.Favourite();
+            System.Windows.Forms.MessageBox.Show($"Favourite Horse: {favourite.Name} with average time {favourite.AverageTime()}");
+
         }
     }
 
-    
+
 }

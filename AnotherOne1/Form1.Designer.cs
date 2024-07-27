@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             grpHorse = new GroupBox();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
+            lblTime3 = new Label();
+            lblTime2 = new Label();
+            lblTime1 = new Label();
             label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            lblHeight = new Label();
+            lblAge = new Label();
+            lblName = new Label();
             txtTime3 = new TextBox();
             txtTime2 = new TextBox();
             txtTime1 = new TextBox();
@@ -52,13 +52,13 @@
             // 
             // grpHorse
             // 
-            grpHorse.Controls.Add(label7);
-            grpHorse.Controls.Add(label6);
-            grpHorse.Controls.Add(label5);
+            grpHorse.Controls.Add(lblTime3);
+            grpHorse.Controls.Add(lblTime2);
+            grpHorse.Controls.Add(lblTime1);
             grpHorse.Controls.Add(label4);
-            grpHorse.Controls.Add(label3);
-            grpHorse.Controls.Add(label2);
-            grpHorse.Controls.Add(label1);
+            grpHorse.Controls.Add(lblHeight);
+            grpHorse.Controls.Add(lblAge);
+            grpHorse.Controls.Add(lblName);
             grpHorse.Controls.Add(txtTime3);
             grpHorse.Controls.Add(txtTime2);
             grpHorse.Controls.Add(txtTime1);
@@ -73,32 +73,32 @@
             grpHorse.TabStop = false;
             grpHorse.Text = "Horse";
             // 
-            // label7
+            // lblTime3
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(19, 269);
-            label7.Name = "label7";
-            label7.Size = new Size(42, 15);
-            label7.TabIndex = 13;
-            label7.Text = "Time 3";
+            lblTime3.AutoSize = true;
+            lblTime3.Location = new Point(19, 269);
+            lblTime3.Name = "lblTime3";
+            lblTime3.Size = new Size(42, 15);
+            lblTime3.TabIndex = 13;
+            lblTime3.Text = "Time 3";
             // 
-            // label6
+            // lblTime2
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(19, 230);
-            label6.Name = "label6";
-            label6.Size = new Size(42, 15);
-            label6.TabIndex = 12;
-            label6.Text = "Time 2";
+            lblTime2.AutoSize = true;
+            lblTime2.Location = new Point(19, 230);
+            lblTime2.Name = "lblTime2";
+            lblTime2.Size = new Size(42, 15);
+            lblTime2.TabIndex = 12;
+            lblTime2.Text = "Time 2";
             // 
-            // label5
+            // lblTime1
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(19, 194);
-            label5.Name = "label5";
-            label5.Size = new Size(42, 15);
-            label5.TabIndex = 11;
-            label5.Text = "Time 1";
+            lblTime1.AutoSize = true;
+            lblTime1.Location = new Point(19, 194);
+            lblTime1.Name = "lblTime1";
+            lblTime1.Size = new Size(42, 15);
+            lblTime1.TabIndex = 11;
+            lblTime1.Text = "Time 1";
             // 
             // label4
             // 
@@ -109,32 +109,32 @@
             label4.TabIndex = 10;
             label4.Text = "Enter the last three races";
             // 
-            // label3
+            // lblHeight
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(19, 103);
-            label3.Name = "label3";
-            label3.Size = new Size(46, 15);
-            label3.TabIndex = 9;
-            label3.Text = "Height:";
+            lblHeight.AutoSize = true;
+            lblHeight.Location = new Point(19, 103);
+            lblHeight.Name = "lblHeight";
+            lblHeight.Size = new Size(46, 15);
+            lblHeight.TabIndex = 9;
+            lblHeight.Text = "Height:";
             // 
-            // label2
+            // lblAge
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(19, 74);
-            label2.Name = "label2";
-            label2.Size = new Size(31, 15);
-            label2.TabIndex = 8;
-            label2.Text = "Age:";
+            lblAge.AutoSize = true;
+            lblAge.Location = new Point(19, 74);
+            lblAge.Name = "lblAge";
+            lblAge.Size = new Size(31, 15);
+            lblAge.TabIndex = 8;
+            lblAge.Text = "Age:";
             // 
-            // label1
+            // lblName
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(19, 37);
-            label1.Name = "label1";
-            label1.Size = new Size(42, 15);
-            label1.TabIndex = 7;
-            label1.Text = "Name:";
+            lblName.AutoSize = true;
+            lblName.Location = new Point(19, 37);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(42, 15);
+            lblName.TabIndex = 7;
+            lblName.Text = "Name:";
             // 
             // txtTime3
             // 
@@ -214,6 +214,7 @@
             btnPredictWinner.TabIndex = 2;
             btnPredictWinner.Text = "Predict Winner";
             btnPredictWinner.UseVisualStyleBackColor = true;
+            btnPredictWinner.Click += btnPredictWinner_Click;
             // 
             // Form1
             // 
@@ -239,13 +240,13 @@
         private GroupBox grpRoaster;
         private TextBox txtRoaster;
         private Button btnPredictWinner;
-        private Label label7;
-        private Label label6;
-        private Label label5;
+        private Label lblTime3;
+        private Label lblTime2;
+        private Label lblTime1;
         private Label label4;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private Label lblHeight;
+        private Label lblAge;
+        private Label lblName;
         private TextBox txtTime3;
         private TextBox txtTime2;
         private TextBox txtTime1;
